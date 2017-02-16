@@ -26,3 +26,18 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+collections:
+  work:
+    output: true
+    permalink: /work/:path/
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "work" 
+    values:
+      layout: "project"
+
+

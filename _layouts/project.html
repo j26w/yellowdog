@@ -1,0 +1,94 @@
+{% capture page_title %}{{ page.title }}{% endcapture %}
+{% capture page_description %}{{ page.description }}{% endcapture %}
+{% include head.html title=page_title my_page_description=page_description my_page_keywords="" %}
+{% include header.html %}
+
+<div class="subheadwrap" style="background:#fff;border-bottom: 1px solid #CCCCCC;">
+    	<div class="row">
+    		<div class="nine columns">
+    			<h3>Selected Work</h3>
+    			
+    		</div>	
+    		<div class="three columns hide-for-small">
+    			<p></p>
+    		</div>
+    	</div>	
+  </div>	
+   
+    	<div style="height:35px;"></div>
+	
+	
+		<div class="row" id="project">
+			
+				<div class="four columns push-eight">
+			    	<h2 style="margin-top:0;padding-top:0;">{{ page.project }}</h2>
+			    	<hr />
+			    	<h6>{{ page.client }}</h6>
+			    	<hr />
+			    	{{content}}
+				</div>
+				<div class="eight columns pull-four">
+					{% for image in page.images %}
+					<img src="{{ site.baseurl }}/images/made/1437c1f96cf1a33c/{{ image.url }}" alt="{{ image.alt }}" title="{{ image.alt }}" width="600" height="450" />					
+					{% endfor %}
+
+					<!---pagination for collections-->
+					{% capture the_collection %}{{page.collection}}{% endcapture %}
+
+					{% if page.collection %}
+					    {% assign  document = site[the_collection] | sort: "date" | reversed %}
+					{% endif %}
+
+					{% for links in document %}
+					    {% if links.title == page.title %}
+
+					        {% unless forloop.first %}
+					            {% assign prevurl = prev.url %}
+
+					            {% assign prevtitle = prev.title %}
+					        {% endunless %}
+
+					        {% unless forloop.last %}
+					            {% assign next = document[forloop.index] %}
+
+					            {% assign nexturl = next.url %}
+
+					            {% assign nexttitle = next.title %}
+					        {% endunless %}
+					    {% endif %}
+
+					    {% assign prev = links %}
+					{% endfor %}
+		</div>
+					{% if prevurl or nexturl %}
+						<nav class="pagination pag-two hide-for-small">
+								{% if prevurl %}<span id="prev-nav"><a href="{{ site.baseurl }}/{{prevurl}}">Older</a></span>{% endif %}
+					        	{% if nexturl %}<span id="next-nav"><a href="{{ site.baseurl }}/{{nexturl}}">Newer</a></span>{% endif %}
+						</nav>
+					       
+					
+					<!---end pagination for collections-->
+
+
+
+
+
+
+		</div>
+		
+		<div class="row show-for-small">
+			<div class="twelve columns">
+				<nav class="pagination-mobile">
+					
+					
+						{% if prevurl %}<span id="prev-nav-mobile" style="float:right;"><a href="{{ site.baseurl }}/{{prevurl}}" class="button">Older &rarr;</a></span>{% endif %}
+						{% if nexturl %}<span id="next-nav-mobile" style="float:left;"><a href="{{ site.baseurl }}/{{nexturl}}" class="button">&larr;Newer</a></span>{% endif %}
+					
+				</nav>
+			</div>
+		</div>
+	{% endif %}
+	
+    <div style="height:35px;"></div>
+
+{% include footer.html %}

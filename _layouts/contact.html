@@ -1,0 +1,110 @@
+{% include head.html title="Design and Marketing Services | YellowDog | Orlando, FL" my_page_description="Learn about our services and capabilities, as well as the YellowDog origin story." my_page_keywords="" %}
+{% include header.html %}
+
+<div class="subheadwrap" style="background:#fff;border-bottom: 1px solid #CCCCCC;">
+    	<div class="row">
+    		<div class="nine columns">
+    			<h3>Contact Us</h3>
+    		</div>	
+    		<div class="three columns hide-for-small">
+    			<p></p>
+    		</div>
+    	</div>	
+	</div>	
+	<div class="row">
+			<div class="eight columns">
+				<p>&nbsp;</p>
+				<p class="eleven">We'd love to hear from you. Tell us about your project, or just drop us a line.</p><br />
+
+				<form action="http://email.yellowdogagency.com/t/r/s/ulwdtd/" method="post" id="subForm">
+			        <label for="fieldName">Your Name*</label>
+			        <input id="fieldName" name="cm-name" type="text" size="40" maxlength="35" class="eleven" />
+			        <label for="fieldEmail">Email Address*</label>
+			        <input id="fieldEmail" name="cm-ulwdtd-ulwdtd" type="email" class="eleven" size="40" maxlength="35" required />
+			        <label for="fielddrkldhdi">Phone Number</label>
+			        <input id="fielddrkldhdi" name="cm-f-drkldhdi" type="text" class="eleven" size="40" maxlength="35" />
+			        <label for="fielddrkldhdd">Company</label>
+			        <input id="fielddrkldhdd" name="cm-f-drkldhdd" type="text" class="eleven" size="40" maxlength="35" />
+			        <label for="fielddrkldhdh">Message*</label>
+			        <textarea class="eleven" id="fielddrkldhdh" name="cm-f-drkldhdh" rows="5" cols="40"></textarea>
+			         <!--hidden success and error messages for ajax form submission-->
+			         <div id="errorMessageDiv" class="alert-box success eleven" style="margin-top:25px;display:none;">
+					  Oops, something went wrong. Please be sure to fill out all required fields.
+					  <a href="" class="close">&times;</a>
+					</div>
+					<div id="successMessageDiv" class="alert-box success eleven" style="margin-top:25px;display:none;">
+					  Your email was successfully sent. Thank you.
+					  <a href="" class="close">&times;</a>
+					</div>
+			        <input name="submit" class="button" type='submit' value='Send It' />
+			    </p>
+			</form>
+			<!--//////////////////////////////////// 
+			    javascript for ajax form submission
+			/////////////////////////////////////////->
+			
+			<!--needs jquery-->
+			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> 
+
+			<!--check the form data and display success or error message-->
+			<script type="text/javascript">
+			    $(function () {
+			        $('#subForm').submit(function (e) {
+			            e.preventDefault();
+			            $.getJSON(
+			            this.action + "?callback=?",
+			            $(this).serialize(),
+			            function (data) {
+			                if (data.Status === 400) {
+			                    document.getElementById('successMessageDiv').style.display = 'none';
+			                    document.getElementById('errorMessageDiv').style.display = 'block';
+			                } else { // 200
+			                    document.getElementById('errorMessageDiv').style.display = 'none';
+			                    document.getElementById('successMessageDiv').style.display = 'block';
+			                }
+			            });
+			        });
+			    });
+			</script><!--end javascript for ajax form submission-->
+
+
+
+			</div>
+			<div class="four columns">
+				<div class="row">
+      			<!--<div class="twelve columns">
+					<p>&nbsp;</p><h6>Our Location</h6>
+					<p>11928 Sheldon Road<br />Tampa, FL 33626</p>
+					<p class="show-for-small"><a class="button twelve" href="http://maps.apple.com/maps?daddr=11928+Sheldon+Rd+Suite+105+Tampa+FL+33626">Apple Maps Directions</a></p>
+						<p class="show-for-small"><a class="button twelve" href="http://maps.google.com/maps?daddr=11928+Sheldon+Rd+Suite+105+Tampa+FL+33626">Google Maps Directions</a></p>
+						<p>&nbsp;</p>
+				</div>-->
+				<div class="twelve columns">
+				   	<p>&nbsp;</p>
+				 <h6>Our Contact Info</h6>
+					<h6 style="font-size:12px;color:#666;font-weight:300;margin-bottom:0.2em;"><br />Phone</h6>
+					<p><span itemprop="telephone"><a href="tel:+14074566830">(407) 456-6830</a></span><p>
+					<h6 style="font-size:12px;color:#666;font-weight:300;margin-bottom:0.2em;">Email</h6>
+					<script>mail("info","yellowdogagency",0,"")</script></p>
+                    <h6 style="font-size:12px;color:#666;font-weight:300;margin-bottom:0.2em;">YellowDog Marketing Inc.</h6>
+					<p>8815 Conroy Windermere Rd<br />Suite 226<br/>Orlando, FL 32835</p>
+					<p>&nbsp;</p>
+				</div>
+				<div class="twelve columns">
+					<h6>Connect With Us</h6>
+					<a title="facebook" href="http://facebook.com/yellowdogagency"><i class="foundicon-facebook"></i></a>
+					<a title="twitter" href="http://twitter.com/yellowdogagency"><i class="foundicon-twitter"></i></a>
+					<a title="Google Plus" href="http://plus.google.com/+Yellowdogagency"><i class="foundicon-google-plus"></i></a>
+					<a title="LinkedIn" href="http://www.linkedin.com/company/yellowdog-marketing-inc-"><i class="foundicon-linkedin"></i></a>
+					<a title="instagram" href="http://instagram.com/yellowdogagency"><i class="foundicon-instagram"></i></a>		
+					<a title="tumblr" href="http://journal.yellowdogagency.com/"><i class="foundicon-tumblr"></i></a>
+					<a title="flickr" href="http://flickr.com/yellowdogagency"><i class="foundicon-flickr"></i></a>	
+					<p>&nbsp;</p>
+				</div>
+				
+    </div> 
+				
+			</div>
+	</div>
+
+{% include footer.html %}

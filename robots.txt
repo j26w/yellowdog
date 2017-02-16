@@ -1,0 +1,9 @@
+# www.robotstxt.org/
+# www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
+
+User-agent: *
+Disallow: /thankyou
+
+Sitemap: http://yellowdogagency.com/site/sitemap
+Sitemap: http://journal.yellowdogagency.com/sitemap1.xml
+

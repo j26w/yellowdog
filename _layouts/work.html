@@ -1,0 +1,33 @@
+{% include head.html title="Portfolio of Design and Marketing Work | YellowDog | Orlando, FL" my_page_description="View selected graphic design work and marketing campaign examples from our Orlando ad agency." my_page_keywords="" %}
+{% include header.html %}
+
+<div class="subheadwrap" style="background:#fff;border-bottom: 1px solid #CCCCCC;">
+    	<div class="row">
+    		<div class="nine columns">
+    			<h3>Selected Work</h3>
+    			
+    		</div>	
+    		<div class="three columns hide-for-small">
+    			<p></p>
+    		</div>
+    	</div>	
+  </div>	
+    	<div style="height:35px;"></div>
+	
+		<div class="row" id="work">
+			<div class="twelve columns">
+				<ul class="block-grid two-up mobile">
+					{% for work in site.work reversed %}
+					<li class="projectbox">
+						<a href="{{ site.baseurl }}/{{ work.url }}">
+							 <img class="imgshadow" src="{{ site.baseurl }}/images/made/1437c1f96cf1a33c/{{ work.thumb }}" width="450" height="338" alt="{{work.client}} - {{work.project}}" title="{{work.client}} - {{work.project}}" />
+							<div class="caption"><h6>{{ work.project }}</h6><span class="tags">{{ work.client }}</span></div>
+						</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+    <div style="height:35px;"></div>
+
+{% include footer.html %}

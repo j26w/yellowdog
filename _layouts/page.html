@@ -1,1 +1,216 @@
-{{ content }}
+{% include head.html title="Design and Marketing Services | YellowDog | Orlando, FL" my_page_description="Learn about our services and capabilities, as well as the YellowDog origin story." my_page_keywords="" %}
+{% include header.html %}
+
+<div class="subheadwrap" style="background:#fff;border-bottom: 1px solid #CCCCCC;">
+    	<div class="row">
+    		<div class="nine columns">
+    			<h3>About Us</h3>
+    			
+    		</div>	
+    		<div class="three columns hide-for-small">
+    			<p></p>
+    		</div>
+    	</div>	
+  </div>	
+   
+  
+  <!-- Three-up Content Blocks -->
+  <div style="height:35px;"></div>
+  <div class="row" id="project">
+  
+    <div class="twelve columns">
+    	<img src="{{ site.baseurl }}/images/uploads/notebook-tablet-desk.jpg" />
+    </div>
+    
+    <div class="eight columns">
+		<h2 style="margin-top:0;padding-top:0;">What We Do</h2>
+    	<p>A brand is much more than a logo or a pretty website. It&rsquo;s the story about everything your organization represents, its core values, and how it interacts with its customers and followers. At YellowDog, we work with passionate brands to tell their stories. We create thoughtful, effective messages, and equip our clients with the tools they need to deliver these messages to their audiences.
+</p>
+    	
+    	<div class="row approach">
+    		<div class="six columns">
+				<h3>Branding</h3>
+				<ul class="circle">
+		    		<li>Brand Creation</li>
+					<li>New Logo Design</li>
+					<li>Logo Renovation</li>
+					<li>Brand Guidelines</li>
+					<li>Collateral Design</li>
+					<li>Brand Strategy</li>
+				</ul>
+			</div>
+    		<div class="six columns">
+				<h3>Print</h3>
+				<ul class="circle">
+		    		<li>Posters</li>
+					<li>Signage</li>
+					<li>Apparel</li>
+					<li>Menus</li>
+					<li>Company Reports</li>
+					<li>Brochures</li>
+					<li>Packaging &amp; POS Display</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row approach">
+    		<div class="six columns">
+				<h3>Digital</h3>
+				<ul class="circle">
+		    		<li>Website Design &amp; Development</li>
+					<li>Responsive (Mobile) Design</li>
+					<li>Content Management Systems</li>
+					<li>E-Commerce</li>
+					<li>Email Marketing</li>
+					<li>SMS (Text Message) Marketing</li>
+					<li>Digital Signage</li>
+				</ul>
+			</div>
+			<div class="six columns">
+				<h3>Strategy</h3>
+				<ul class="circle">
+		    		<li>Wireframing</li>
+					<li>Content Strategy</li>
+					<li>Usability &amp; Information Architecture</li>
+					<li>Brand Analysis &amp; Positioning</li>
+					<li>Social Media Strategy</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--<div class="row approach">
+    		<div class="four columns"><img src="{site_url}images/uploads/process-1-discovery.png" /></div>
+    		<div class="four columns"><img src="{site_url}images/uploads/process-2-research.png" /></div>
+    		<div class="four columns"><img src="{site_url}images/uploads/process-3-design.png" /></div>
+		</div>
+    	<div class="row approach">
+    		<div class="four columns"><img src="{site_url}images/uploads/process-4-develop.png" /></div>
+    		<div class="four columns"><img src="{site_url}images/uploads/process-5-market.png" /></div>
+    		<div class="four columns"><img src="{site_url}images/uploads/process-6-analyze.png" /></div>
+		</div>
+		-->
+    	<div style="height:35px;"></div>
+	    
+		<span style="font-size:21px;margin-top: 20px;margin-bottom: 2.7em;display:inline-block">Sound like a good fit?&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="{{ site.baseurl }}/contact/" class="button large">Let&rsquo;s talk</a>
+		<div class="show-for-small">
+					  				<p>&nbsp;</p>
+					  			</div>
+    </div>
+    <div class="four columns">
+	
+		<div class="testimonial-wrap">
+
+			<div class="row">
+				<div class="large-6 columns testimonial">
+					<div class="quote">
+						<p>"YellowDog was a big part of how our one little bar quickly became a national franchise. Their attention to detail, and ability to tackle unforeseen challenges with ease makes them an invaluable asset."</p>
+					</div>
+					<div class="student">
+						<div class="photo"><img src="{{ site.baseurl }}/images/uploads/photo-scottzepp.jpg"> </div>
+						<p>Scott Zepp</p>
+						<p>Co-Founder, <a href="http://worldofbeer.com" style="color:#777">World of Beer&reg;</a></p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+			
+			<style>
+
+			.centered-text {
+			  text-align: center;
+			}
+
+			.quote {
+			  background: #d9d9d9;
+			  padding: 25px 25px 15px 25px;
+			  border-radius: 5px;
+			  margin-bottom: 30px;
+			}
+			.quote p {
+				font-style:italic;
+				font-size:18px;
+				margin-bottom: 0;
+			  
+			}
+			.quote:after {
+			  content: '';
+			  width: 0px;
+			  height: 0px;
+			  border-style: solid;
+			  border-width: 20px 18px 0 18px;
+			  border-color: #d9d9d9 transparent transparent transparent;
+			  position: relative;
+			  top: 55px;
+			  left: 20px;
+			}
+
+			.student {
+			  margin-left: 25px;
+			  margin-bottom: 80px;
+			}
+			.student .photo {
+			  background-color: #ccc;
+			  border-radius: 100px;
+			  width: 60px;
+			  height: 60px;
+			  float: left;
+			  margin-right: 10px;
+			  overflow:hidden;	
+			}
+			.student p {
+			  position: relative;
+			  top: 5px;
+			  text-transform: none;
+			}
+			.student p:nth-child(2) {
+			  font-size: 16px;
+			  font-weight: 600;
+			  margin-bottom: 0;
+			}
+			.student p:nth-child(3) {
+			  font-size: 14px;
+			  color: #777;
+			}
+			
+			</style>
+
+	
+	
+		<h2 style="margin-top:0;padding-top:0;">Our Story</h2>
+		<p>Founded in 2008 by designer J.W. Bulger, YellowDog is a small agency committed to great design. J.W. worked almost exclusively with the founders of World of Beer&reg; from its infancy to create what is now one of the most successful franchises in the craft beer industry.</p>
+		<p>Today, YellowDog works with a number of clients, both small and large, from a variety of industries, and takes great pride in helping organizations succeed through quality design workmanship and effective marketing products. </p>
+		<!--<hr />
+    	<h2 style="margin-top:0;padding-top:0;">Services</h2>
+    	<ul class="circle">
+    		<li>Graphic Design for All Media</li>
+			<li>Branding &amp; Identity</li>
+			<li>Website / Mobile Design &amp; Development</li>
+			<li>Usability &amp; Information Architecture</li>
+			<li>Content Strategy</li>
+			<li>Content Management</li>
+			<li>Project Management &amp; Consultation</li>
+			<li>Copywriting</li>
+			<li>Search Marketing &amp; PR</li>
+			<li>Printing &amp; Print Management</li>
+		</ul>
+		<hr />
+		<h2 style="margin-top:0;padding-top:0;">Products</h2>
+    	<ul class="circle">
+    		<li>Email Marketing</li>
+			<li>SMS Marketing</li>
+			<li>Online Template Customization</li>
+			<li>Social Media App Manager</li>
+			<li>Facebook Post Scheduler &amp; Brander</li>
+			<li>Search Marketing &amp; Social Media Reporting Console</li>
+
+		</ul>
+    	-->
+  
+      
+    </div>
+    
+ 
+  </div>
+    <div style="height:35px;"></div>
+
+{% include footer.html %}
