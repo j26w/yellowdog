@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: YellowDog | Orlando Graphic Design Firm, Advertising and Marketing Agency
 description: YellowDog is a craft design and marketing agency in Orlando, FL specializing in branding and graphic design for web and print.
-baseurl: "/yellowdog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yellowdogagency.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: yellowdogagency
 
