@@ -30,6 +30,7 @@ exclude:
 collections:
   work:
     output: true
+    permalink: /work/:title
 
 defaults:
   -
