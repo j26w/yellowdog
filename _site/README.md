@@ -1,2 +1,0 @@
-# yellowdog
-YellowDog Company Website
