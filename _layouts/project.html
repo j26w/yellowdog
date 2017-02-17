@@ -81,8 +81,8 @@
 				<nav class="pagination-mobile">
 					
 					
-						{% if prevurl %}<span id="prev-nav-mobile" style="float:right;"><a href="{{ site.baseurl }}/{{prevurl}}" class="button">Older &rarr;</a></span>{% endif %}
-						{% if nexturl %}<span id="next-nav-mobile" style="float:left;"><a href="{{ site.baseurl }}/{{nexturl}}" class="button">&larr;Newer</a></span>{% endif %}
+						{% if prevurl %}<span id="prev-nav-mobile" style="float:right;"><a href="{{prevurl | prepend: site.baseurl}}" class="button">Older &rarr;</a></span>{% endif %}
+						{% if nexturl %}<span id="next-nav-mobile" style="float:left;"><a href="{{nexturl | prepend: site.baseurl}}" class="button">&larr;Newer</a></span>{% endif %}
 					
 				</nav>
 			</div>
