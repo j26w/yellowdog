@@ -4,6 +4,6 @@
 User-agent: *
 Disallow: /thankyou
 
-Sitemap: http://yellowdogagency.com/site/sitemap
+Sitemap: http://yellowdogagency.com/sitemap.xml
 Sitemap: http://journal.yellowdogagency.com/sitemap1.xml
 
