@@ -1,0 +1,55 @@
+{% include head.html title="Site Map Website Page Directory" my_page_description="The sitemap of our website with text links to all pages within our site." my_page_keywords="" %}
+{% include header.html %}
+
+<div class="subheadwrap" style="background:#fff;border-bottom: 1px solid #CCCCCC;">
+    	<div class="row">
+    		<div class="nine columns">
+    			<h3>SITE MAP</h3>
+    			
+    		</div>	
+    		<div class="three columns hide-for-small">
+    			<p></p>
+    		</div>
+    	</div>	
+  </div>	
+   
+  <div class="row">
+    <div class="twelve columns">
+    	<!--<h3 style="margin:45px 0 0 0;">What is YellowDog? </h3>-->
+        <p style="color:#ccc;margin:0 0;padding:0;"> &nbsp;</p>
+	<p>
+	    <a href="{{ site.baseurl }}/" style="font-size:21px">Homepage</a><br />
+	    Main Page of our Orlando Marketing Agency Website	
+	</p>
+	<p><a href="{{ site.baseurl }}/work" style="font-size:21px">Portfolio of Work</a> <br />
+	    Selected Graphic Design Work and Marketing Campaigns</p>
+        <p><a href="{{ site.baseurl }}/about" style="font-size:21px">About YellowDog</a><br />
+           Our Story and Design &amp; Marketing Capabilities</p>
+	<p><a href="http://journal.yellowdogagency.com/" style="font-size:21px">Journal</a> <br />
+            Visual Journal of Our Creations, Inspirations, and Observations (powered by Tumblr)</p>     
+	<p><a href="{{ site.baseurl }}/contact" style="font-size:21px">Contact Us</a> <br />
+            General Inquires and New Business Project Quotes</p>     
+        <!--<p style="color:#ccc;margin:0 0;padding:0;">&bull;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&bull;</p>-->
+	</div>
+</div>
+
+    	<div style="height:35px;"></div>
+	
+		<div class="row" id="work">
+			<div class="twelve columns">
+				<ul class="block-grid two-up mobile">
+					{% for work in site.work reversed %}
+					<li class="projectbox">
+						<a href="{{ work.url | prepend: site.baseurl}}">
+							 <img class="imgshadow" src="{{ site.baseurl }}/images/made/1437c1f96cf1a33c/{{ work.thumb }}" width="450" height="338" alt="{{work.client}} - {{work.project}}" title="{{work.client}} - {{work.project}}" />
+							<div class="caption"><h6>{{ work.project }}</h6><span class="tags">{{ work.client }}</span></div>
+						</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+		
+    <div style="height:35px;"></div>
+
+{% include footer.html %}
