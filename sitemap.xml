@@ -3,7 +3,7 @@
   
     
     <url>
-      <loc>http://yellowdogagency.com/jekyll/update/2017/02/16/welcome-to-jekyll.html</loc>
+      <loc>http://localhost:4000/jekyll/update/2017/02/16/welcome-to-jekyll.html</loc>
       
         <lastmod>2017-02-16T16:52:28+01:00</lastmod>
       
@@ -19,24 +19,9 @@
   
     
     <url>
-      <loc>http://yellowdogagency.com/about</loc>
+      <loc>http://localhost:4000/about</loc>
       
-        <lastmod>2017-02-17T13:55:58+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://yellowdogagency.com/contact</loc>
-      
-        <lastmod>2017-02-17T13:55:58+01:00</lastmod>
+        <lastmod>2017-02-17T14:03:32+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -49,41 +34,9 @@
   
     
     <url>
-      <loc>http://yellowdogagency.com/</loc>
+      <loc>http://localhost:4000/contact</loc>
       
-        <lastmod>2017-02-17T13:55:58+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://yellowdogagency.com/sitemap</loc>
-      
-        <lastmod>2017-02-17T13:55:58+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-  
-    
-    <url>
-      <loc>http://yellowdogagency.com/work</loc>
-      
-        <lastmod>2017-02-17T13:55:58+01:00</lastmod>
+        <lastmod>2017-02-17T14:03:32+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -96,9 +49,9 @@
   
     
     <url>
-      <loc>http://yellowdogagency.com/feed.xml</loc>
+      <loc>http://localhost:4000/</loc>
       
-        <lastmod>2017-02-17T13:55:58+01:00</lastmod>
+        <lastmod>2017-02-17T14:03:32+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -111,9 +64,56 @@
   
     
     <url>
-      <loc>http://yellowdogagency.com/feed.xslt.xml</loc>
+      <loc>http://localhost:4000/sitemap</loc>
       
-        <lastmod>2017-02-17T13:55:58+01:00</lastmod>
+        <lastmod>2017-02-17T14:03:32+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/work</loc>
+      
+        <lastmod>2017-02-17T14:03:32+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/feed.xml</loc>
+      
+        <lastmod>2017-02-17T14:03:32+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/feed.xslt.xml</loc>
+      
+        <lastmod>2017-02-17T14:03:32+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -127,7 +127,7 @@
   
     
     <url>
-      <loc>http://yellowdogagency.com/work/casino-beach-bar</loc>
+      <loc>http://localhost:4000/work/casino-beach-bar</loc>
       
         <lastmod>2015-11-17T23:16:01+01:00</lastmod>
       
@@ -144,7 +144,7 @@
   
     
     <url>
-      <loc>http://yellowdogagency.com/work/european-taxidermy</loc>
+      <loc>http://localhost:4000/work/european-taxidermy</loc>
       
         <lastmod>2015-11-15T23:16:01+01:00</lastmod>
       
@@ -161,7 +161,7 @@
   
     
     <url>
-      <loc>http://yellowdogagency.com/work/partridge-park-lodge</loc>
+      <loc>http://localhost:4000/work/partridge-park-lodge</loc>
       
         <lastmod>2015-11-14T23:16:01+01:00</lastmod>
       
@@ -178,7 +178,7 @@
   
     
     <url>
-      <loc>http://yellowdogagency.com/work/cest-la-vie</loc>
+      <loc>http://localhost:4000/work/cest-la-vie</loc>
       
         <lastmod>2015-11-13T23:16:01+01:00</lastmod>
       
@@ -195,7 +195,7 @@
   
     
     <url>
-      <loc>http://yellowdogagency.com/work/seasonal-beer-series</loc>
+      <loc>http://localhost:4000/work/seasonal-beer-series</loc>
       
         <lastmod>2015-11-12T23:16:01+01:00</lastmod>
       
@@ -212,7 +212,7 @@
   
     
     <url>
-      <loc>http://yellowdogagency.com/work/culture-focused</loc>
+      <loc>http://localhost:4000/work/culture-focused</loc>
       
         <lastmod>2015-11-11T23:16:01+01:00</lastmod>
       
@@ -229,7 +229,7 @@
   
     
     <url>
-      <loc>http://yellowdogagency.com/work/battle-of-the-bands</loc>
+      <loc>http://localhost:4000/work/battle-of-the-bands</loc>
       
         <lastmod>2015-11-10T23:16:01+01:00</lastmod>
       
@@ -246,7 +246,7 @@
   
     
     <url>
-      <loc>http://yellowdogagency.com/work/american-craft-beer-week</loc>
+      <loc>http://localhost:4000/work/american-craft-beer-week</loc>
       
         <lastmod>2015-11-10T23:16:01+01:00</lastmod>
       
@@ -263,7 +263,7 @@
   
     
     <url>
-      <loc>http://yellowdogagency.com/work/st.-pattys-day</loc>
+      <loc>http://localhost:4000/work/st.-pattys-day</loc>
       
         <lastmod>2015-11-09T23:16:01+01:00</lastmod>
       
@@ -280,7 +280,7 @@
   
     
     <url>
-      <loc>http://yellowdogagency.com/work/world-of-beer-identity-design</loc>
+      <loc>http://localhost:4000/work/world-of-beer-identity-design</loc>
       
         <lastmod>2015-11-08T23:16:01+01:00</lastmod>
       
