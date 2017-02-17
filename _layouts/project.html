@@ -62,8 +62,8 @@
 		</div>
 					{% if prevurl or nexturl %}
 						<nav class="pagination pag-two hide-for-small">
-								{% if prevurl %}<span id="prev-nav"><a href="{{ site.baseurl }}/{{prevurl}}">Older</a></span>{% endif %}
-					        	{% if nexturl %}<span id="next-nav"><a href="{{ site.baseurl }}/{{nexturl}}">Newer</a></span>{% endif %}
+								{% if prevurl %}<span id="prev-nav"><a href="{{prevurl | prepend: site.baseurl}}">Older</a></span>{% endif %}
+					        	{% if nexturl %}<span id="next-nav"><a href="{{nexturl | prepend: site.baseurl}}">Newer</a></span>{% endif %}
 						</nav>
 					       
 					

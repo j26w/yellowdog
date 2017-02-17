@@ -19,7 +19,7 @@
 				<ul class="block-grid two-up mobile">
 					{% for work in site.work reversed %}
 					<li class="projectbox">
-						<a href="{{ site.baseurl }}/{{ work.url }}">
+						<a href="{{ work.url | prepend: site.baseurl}}">
 							 <img class="imgshadow" src="{{ site.baseurl }}/images/made/1437c1f96cf1a33c/{{ work.thumb }}" width="450" height="338" alt="{{work.client}} - {{work.project}}" title="{{work.client}} - {{work.project}}" />
 							<div class="caption"><h6>{{ work.project }}</h6><span class="tags">{{ work.client }}</span></div>
 						</a>
